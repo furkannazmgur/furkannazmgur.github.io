@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projelerim</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+  <title>Guarder</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <div class="hero_bg_box">
+      <div class="img-box">
+        <img src="images/fnganasayfa.jpg" alt="">
+      </div>
+    </div>
+
+    <header class="header_section">
+      <div class="header_top">
+        <div class="container-fluid">
+          <div class="contact_link-container">
+            <a href="" class="contact_link1">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Bursa/Osmangazi
+              </span>
+            </a>
+            <a href="" class="contact_link2">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Telefon : 0530 607 1661
+              </span>
+            </a>
+            <a href="" class="contact_link3">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                fng1661gr@gmail.com
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html">
+              <span>
+                Furkan Nazım Gür
+              </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""></span>
+            </button>
+
+            <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.html">Anasayfa <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="tecrube.html"> Tecrübelerim</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ogrenimlertr.html"> Bilgisayar Bilgilerim </a>
+                </li>
+                <li class="nav-item">
+                                <a class="nav-link" href="#" id="projectsLink">Projelerim</a>
+                                <div class="submenu" id="projectsSubmenu">
+                                    <a style="color: orange; margin: 0;;" href="delphipro.html">Delphi Projesi</a>
+                                    <a style="color: orange; margin: 0;;" href="zbrushpro.html">ZBrush Projesi</a>
+                                    <a style="color: orange; margin: 0;;" href="camtasiopro.html">Camtasio 8 Projesi</a>
+                                </div>
+                            </li>
+              
+				
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- about section -->
+
+   <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 px-0">
+          <div class="image_container">
+            <!-- Görsel buraya eklenebilir -->
+          </div>
+        </div>
+        <div class="col-md-6 px-0">
+          <div class="details_box">
+            <div class="heading_container">
+              <h2>Unit5</h2>
+            </div>
+            <div class="inner_container">
+              <div class="code_wrapper">
+                <!-- Sol köşede turuncu kutucuklar -->
+                <div class="nav_wrapper_left">
+                  <a href="unit4.html" class="nav_link">Unit4</a>
+                </div>
+
+                <!-- Sağ köşede turuncu kutucuklar -->
+                <div class="nav_wrapper_right">
+                  <a href="unit6.html" class="nav_link">Unit6</a>
+                </div>
+
+                <!-- İçerik -->
+                <div class="content_area">
+                  <pre><code>
+unit Unit5;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Buttons, Vcl.ExtCtrls,
+  Vcl.Imaging.jpeg;
+
+type
+  TForm5 = class(TForm)
+    SpeedButton1: TSpeedButton;
+    SpeedButton2: TSpeedButton;
+    Image1: TImage;
+    procedure SpeedButton1Click(Sender: TObject);
+    procedure SpeedButton2Click(Sender: TObject);
+    procedure FormShow(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form5: TForm5;
+
+implementation
+
+{$R *.dfm}
+  uses unit1,unit2,unit3,unit4,unit6,unit7,unit8;
+procedure TForm5.FormShow(Sender: TObject);
+begin
+Form3.ADOTable1.active:=True;
+Form2.ADOTable1.active:=True;
+form8.showmodal;
+
+end;
+
+procedure TForm5.SpeedButton1Click(Sender: TObject);
+begin
+
+    form1.ShowModal;
+   
+end;
+
+procedure TForm5.SpeedButton2Click(Sender: TObject);
+begin
+
+      application.Terminate;
+end;
+
+end.
+
+                  </code></pre>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-md-3">
+          <div class="info_links">
+            
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_info">
+            <h5>
+              Bana Ulaşın
+            </h5>
+          </div>
+          <div class="info_contact">
+            <a href="" class="">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Bursa/Osmangazi
+              </span>
+            </a>
+            <a href="" class="">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                Telefon : 0530 607 1661
+              </span>
+            </a>
+            <a href="" class="">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <span>
+                fng1661gr@gmail.com
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_form ">
+            
+            
+            <div class="social_box">
+       
+              <a href="https://www.instagram.com/ffurkannazmgur" target="_blank">
+            <img src="images/instagram-logo.webp" alt="Instagram Profili" width="50" height="50">
+        </a>
+        <a href="https://github.com/furkannazmgur" target="_blank">
+            <img src="images/github-logo.png" alt="GitHub Profili width="50" height="50"">
+        </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+
+
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section">
+    <p>
+      &copy; <span id="currentYear"></span> All Rights Reserved. Design by Furkan Nazım Gür.
+     
+    </p>
+  </footer>
+  <!-- footer section -->
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
